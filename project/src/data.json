@@ -1,0 +1,60 @@
+{
+    "map": {
+        "ascent": {
+            "title":"Ascent: Postplant Viper Lineups",
+            "description":"Here are two postplant molly lineups for Viper on Ascent. Her snakebite ability can be used to shoot two poisonous puddles which will prevent the enemies from defusing the spike. Be sure to shoot the molly six seconds apart. ",
+            "positions": {
+                "A_site":"A site Ascent",
+                "B_site":"B site Ascent"
+            }
+        },
+        "bind": {
+            "title":"Bind: Postplant Viper Lineups",
+            "description":"Use these two postplant molly lineups on Bind with Viper. The two poisonous puddles her snakebite ability creates will prevent the enemies from defusing the spike. Shoot the ability six seconds apart for best effect. ",
+            "positions": {
+                "A_site":"A site Bind",
+                "B_site":"B site Bind"
+            }
+        },
+        "breeze": {
+            "title":"Breeze: Postplant Viper Lineups",
+            "description":"Vipers snakebite ability creates poisonous puddles which can be used to prevent enemies from defusing the spike. Use these postplant molly lineups on Breeze to do so.  Shoot the ability six seconds apart for best effect. ",
+            "positions": {
+                "A_site":"A site Breeze",
+                "B_site":"B site Breeze"
+            }
+        },
+        "fracture": {
+            "title":"Fracture: Postplant Viper Lineups",
+            "description":"In order to prevent enemies from defusing the spike Viper can use her snakebite ability to create poisonous puddles. These postplant molly lineups can be used on Fracture.  Shoot the ability six seconds apart for best effect. ",
+            "positions": {
+                "A_site":"A site Fracture",
+                "B_site":"B site Fracture"
+            }
+        },
+        "haven": {
+            "title":"Haven: Postplant Viper Lineups",
+            "description":"Postplant molly lineups are an efficient way to prevent enemies from defusing the spike. Viper can use her ability “snakebite” in order to create poisonous puddles on Haven. Shoot the ability six seconds apart for best effect. ",
+            "positions": {
+                "A_site":"A site Haven",
+                "B_site":"B site Haven"
+            }
+        },
+        "icebox": {
+            "title":"Icebox: Postplant Viper Lineups",
+            "description":"An efficient way to prevent enemies from defusing the spike is using postplant molly lineups. On Icebox viper can create poisonous puddles with her snakebite ability. Shoot the ability six seconds apart for best effect. ",
+            "positions": {
+                "A_site":"A site Icebox",
+                "B_site":"B site Icebox"
+            }
+        },
+        "split": {
+            "title":"Split: Postplant Viper Lineups",
+            "description":"Vipers ability “snakebite” can be used to create postplant molly lineups. The ability creates poisonous puddles which prevent the enemy from defusing the bomb on Split. Shoot the ability six seconds apart for best effect.",
+            "positions": {
+                "A_site":"A site Split",
+                "B_site":"B site Split"
+            }
+        }
+    }
+}
