@@ -28,6 +28,38 @@ export default function Main() {
     const bSite_1 = Data.map[result].positions.B_site.clip1;
     const bSite_2 = Data.map[result].positions.B_site.clip2;
 
+    function ThirdSite() {
+        if (typeof Data.map[result].positions.C_site === 'object') {
+            const cSite = Data.map[result].positions.C_site.name;
+            const cSite_1 = Data.map[result].positions.C_site.clip1;
+            const cSite_2 = Data.map[result].positions.C_site.clip2;
+            return (
+                <Container className='PositionBox'>
+                        <Row className='Position'>
+                            <h2>
+                                {cSite}
+                            </h2>
+                        </Row>
+                        <Row className=''>
+                            <Col>
+                                <video key={cSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src={cSite_1} type="video/mp4" />
+                                </video>
+                            </Col>
+                            <Col>
+                                <video key={cSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                <source src={cSite_2} type="video/mp4" />
+                                </video>
+                            </Col>
+                        </Row>
+
+                    </Container>
+            )
+            
+        }
+        else {return <p/>}
+    }
+
     return ( 
         <Container fluid>
         <Row>
@@ -36,17 +68,16 @@ export default function Main() {
           </Col>
           <Col md={12} lg={8} className='Main'>
                 <Container>
-
-                    <Row className="d-block d-lg-none">
+                    <Container className="d-block d-lg-none">
                         <div className="dropdown">
-                            <button className="btn btn-secondary dropdown-toggle dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Maps
                             </button>
-                            <div class="dropdown-content">
+                            <div className="dropdown-content fixed-top w-50">
                             <LeftSide/>
                             </div>
                         </div>
-                    </Row>
+                    </Container>
                     <Row className='Title' id="pageTitleRow">
                         <Col>
                             <h1 id="pageTitle">
@@ -96,13 +127,17 @@ export default function Main() {
                                 </video>
                             </Col>
                         </Row>
-                        <Row className='BottomBanner'>
-                            <Col>
-                                <p>Banner</p>
-                            </Col>
-                        
-                        </Row>
+
                     </Container>
+
+                    <ThirdSite />
+                        
+                    <Row className='BottomBanner'>
+                        <Col>
+                            <p>Banner</p>
+                        </Col>
+
+                    </Row>
 
                 </Container>
           </Col>
