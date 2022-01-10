@@ -12,7 +12,7 @@ export default function LeftSide() {
     
     return (
         <div>
-            <h2>Viper</h2>
+            <h2>Maps</h2>
             
             <Link to="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.png"/></Link>
             <Link to="/Bind"><input className="imagebutton" type="image" name="Bind" src="maps/bind.png" /></Link>

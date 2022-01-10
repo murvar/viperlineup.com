@@ -34,24 +34,22 @@ export default function Main() {
                 <Container>
 
                     <Row className='Title' id="pageTitleRow">
-                        <Col xs={{ span : 6, offset : 3}}>
+                        <Col>
                             <h1 id="pageTitle">
                                 {title}
                             </h1>
                         </Col>
                     </Row>
                     <Row className='Description'>
-                        <div>
-                            <h2>
-                            {description}
-                            </h2>
-                        </div>
+                        <h3>
+                        {description}
+                        </h3>
                     </Row>
                     <Container className='PositionBox'>
                         <Row className='Position'>
-                            <h3>
+                            <h2>
                                {aSite}
-                            </h3>
+                            </h2>
                         </Row>
                         <Row className=''>
                             <Col>
@@ -64,9 +62,9 @@ export default function Main() {
                     </Container>
                     <Container className='PositionBox'>
                         <Row className='Position'>
-                            <h3>
+                            <h2>
                                 {bSite}
-                            </h3>
+                            </h2>
                         </Row>
                         <Row className=''>
                             <Col>
@@ -76,11 +74,18 @@ export default function Main() {
                                 <img src="val1.jpg" width="250" height="300"/>
                             </Col>
                         </Row>
+                        <Row className='BottomBanner'>
+                            <Col>
+                                <p>Banner</p>
+                            </Col>
+                        
+                        </Row>
                     </Container>
+
                 </Container>
           </Col>
           
-          <Col xs={2} className='Add'>
+          <Col xs={2} className='SideBanner'>
             <p>Banner</p>
           </Col>
         </Row>
