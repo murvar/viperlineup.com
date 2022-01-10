@@ -1,10 +1,10 @@
+
 .Main {
   border-style: solid;
   border-color: black;
   justify-content: center;
-  height: 100%;
   display: flex;
-  height:100vh;
+  
   background-color:#3a3a3a;
   background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, #3a3a3a 100%);
 }
@@ -48,9 +48,8 @@
 .Leftside {
   border-style: solid;
   border-color: black;
-  height: 100%;
   display: flex;
-  height:100vh;
+  height: 100mv;
   justify-content: center;
   background-color: #15cf74;
   background-color:rgba(36,31,31,1);
@@ -113,5 +112,13 @@
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+.instructions {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+
 
 

@@ -7,12 +7,27 @@
                 "A_site":{
                     "name":"A site Ascent",
                     "clip1":"video/Ascent/A_Ascent_1.mp4",
-                    "clip2":"video/Ascent/A_Ascent_2.mp4"
+                    "clip2":"video/Ascent/A_Ascent_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the box and wall at A Lobby.", 
+                        "Turn to your right.", 
+                        "Line up the lower left corner of Vipers fuel bar with the upper right corner of the metal box."
+                    ],
+                    "siteImage":"plants/Ascent_A.png"
                 },
                 "B_site":{
                     "name":"B site Ascent",
                     "clip1":"video/Ascent/B_Ascent_1.mp4",
-                    "clip2":"video/Ascent/B_Ascent_2.mp4"
+                    "clip2":"video/Ascent/B_Ascent_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the hut and the fence at B Lobby.", 
+                        "Turn to your right.", 
+                        "Identify the “100” underneath Vipers fuel bar in the middle.", 
+                        "Place the “100” in front of the dark gray area by the roof."
+                    ],
+                    "siteImage":"plants/Ascent_B.png"
                 }
             }
         },
@@ -23,12 +38,26 @@
                 "A_site":{
                     "name":"A site Bind",
                     "clip1":"video/Bind/A_Bind_1.mp4",
-                    "clip2":"video/Bind/A_Bind_2.mp4"
+                    "clip2":"video/Bind/A_Bind_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the walls at A Lobby.", 
+                        "Turn to the right and look up.", 
+                        "Aim the crosshair slightly to the right where the metal beam becomes a bugle."
+                    ],
+                    "siteImage":"plants/Bind_A.png"
                 },
                 "B_site":{
                     "name":"B site Bind",
                     "clip1":"video/Bind/B_Bind_1.mp4",
-                    "clip2":"video/Bind/B_Bind_2.mp4"
+                    "clip2":"video/Bind/B_Bind_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the rock and the fence at B Lobby.", 
+                        "Turn to the right.", 
+                        "Aim the lower part of the poison cloud ability icon with the top right corner of the wooden frame."
+                    ],
+                    "siteImage":"plants/Bind_B.png"
                 }
             }
         },
@@ -39,12 +68,28 @@
                 "A_site":{
                     "name":"A site Breeze",
                     "clip1":"video/Breeze/A_Breeze_1.mp4",
-                    "clip2":"video/Breeze/A_Breeze_2.mp4"
+                    "clip2":"video/Breeze/A_Breeze_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the edge of the elevating stone at A Lobby. ", 
+                        "Place yourself in the corner.", 
+                        "Turn to the left and loop up.", 
+                        "Aim the crosshair in between the right gap of the leaves. "
+                    ],
+                    "siteImage":"plants/Breeze_A.png"
                 },
                 "B_site":{
                     "name":"B site Breeze",
                     "clip1":"video/Breeze/B_Breeze_1.mp4",
-                    "clip2":"video/Breeze/B_Breeze_2.mp4"
+                    "clip2":"video/Breeze/B_Breeze_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the middle dark bugle on the stonewall at B Window.", 
+                        "Turn to the left and look up.", 
+                        "Identify the line between the Poison Cloud and the Toxic Screen abilities.", 
+                        "Aim the left point of the line to the dark lower right corner of the stone brick above the wall."
+                    ],
+                    "siteImage":"plants/Breeze_B.png"
                 }
             }
         },
@@ -55,12 +100,26 @@
                 "A_site":{
                     "name":"A site Fracture",
                     "clip1":"video/Fracture/A_Fracture_1.mp4",
-                    "clip2":"video/Fracture/A_Fracture_2.mp4"
+                    "clip2":"video/Fracture/A_Fracture_2.mp4",
+                    "instructions":
+                    [
+                        "Walk on top of the stone at A Dish.", 
+                        "Turn around.", 
+                        "Aim the crosshair in the absolute middle of the metal beam."
+                    ],
+                    "siteImage":"plants/Fracture_A.png"
                 },
                 "B_site":{
                     "name":"B site Fracture",
                     "clip1":"video/Fracture/B_Fracture_1.mp4",
-                    "clip2":"video/Fracture/B_Fracture_2.mp4"
+                    "clip2":"video/Fracture/B_Fracture_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the middle line in the wall at B Tree.", 
+                        "Turn to the right.", 
+                        "Aim the top part of Vipers Snakebite ability with the top left corner of the metal object on the wall to the left."
+                    ],
+                    "siteImage":"plants/Fractue_B.png" 
                 }
             }
         },
@@ -71,17 +130,39 @@
                 "A_site":{
                     "name":"A site Haven",
                     "clip1":"video/Haven/A_Haven_1.mp4",
-                    "clip2":"video/Haven/A_Haven_2.mp4"
+                    "clip2":"video/Haven/A_Haven_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the sandbags and the fence at A Long.", 
+                        "Turn to the left and loop up.", 
+                        "Identify the “100” underneath Vipers fuel bar in the middle.",
+                        "Aim the “100” in front of the second farmost right lamp."
+                    ],
+                    "siteImage":"plants/Haven_A.png"                
                 },
                 "B_site":{
                     "name":"B site Haven",
                     "clip1":"video/Haven/B_Haven_1.mp4",
-                    "clip2":"video/Haven/B_Haven_2.mp4"
+                    "clip2":"video/Haven/B_Haven_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the pot and the small hut at Attacker Side Spawn.", 
+                        "Turn around.", 
+                        "Aim the crosshair slightly above the top of the temple roof."
+                    ],
+                    "siteImage":"plants/Haven_B.png"                
                 },
                 "C_site":{
                     "name":"C site Haven",
                     "clip1":"video/Haven/C_Haven_1.mp4",
-                    "clip2":"video/Haven/C_Haven_2.mp4"
+                    "clip2":"video/Haven/C_Haven_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the wall on top of the wood object at C Lobby.", 
+                        "Turn around.", 
+                        "Aim the farmost left line of Vipers Snakebite ability with the corner of the two stones."
+                    ],
+                    "siteImage":"plants/Haven_C.png"                
                 }
             }
         },
@@ -92,12 +173,28 @@
                 "A_site":{
                     "name":"A site Icebox",
                     "clip1":"video/Icebox/A_Icebox_1.mp4",
-                    "clip2":"video/Icebox/A_Icebox_2.mp4"
+                    "clip2":"video/Icebox/A_Icebox_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up the corner of the wall at A Lobby.", 
+                        "Turn around.", 
+                        "Aim the crosshair at the right corner of the shadow from the metal beam."
+                    ],
+                    "siteImage":"plants/Icebox_A.png"                
                 },
                 "B_site":{
                     "name":"B site Icebox",
                     "clip1":"video/Icebox/B_Icebox_1.mp4",
-                    "clip2":"video/Icebox/B_Icebox_2.mp4"
+                    "clip2":"video/Icebox/B_Icebox_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the wall and the metal beams at B Lobby.", 
+                        "Turn around and look up.", 
+                        "Identify the right sharp edge on the crane.",
+                        "Aim the crosshair in the middle of the dark area directly above the edge.",
+                        "Jump and shoot before you reach the top of the jump(Observe, this lineup may be inconsistent and hard to perform)."
+                    ],
+                    "siteImage":"plants/Icebox_B.png"                
                 }
             }
         },
@@ -108,12 +205,27 @@
                 "A_site":{
                     "name":"A site Split",
                     "clip1":"video/Split/A_Split_1.mp4",
-                    "clip2":"video/Split/A_Split_2.mp4"
+                    "clip2":"video/Split/A_Split_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the flower pot and the wall at A Lobby.", 
+                        "Turn slightly to the left and look up.", 
+                        "Aim the crosshair slightly to the right of the right lightbeam and just a bit under the corner of the building to the left."
+                    ],
+                    "siteImage":"plants/Split_A.png"                
                 },
                 "B_site":{
                     "name":"B site Split",
                     "clip1":"video/Split/B_Split_1.mp4",
-                    "clip2":"video/Split/B_Split_2.mp4"
+                    "clip2":"video/Split/B_Split_2.mp4",
+                    "instructions":
+                    [
+                        "Walk up to the corner of the eletricbox and the wall at B Lobby.", 
+                        "Turn around.", 
+                        "Identify the green sign.",
+                        "Aim the crosshair slightly to the right of the left side on the sign"
+                    ],
+                    "siteImage":"plants/Split_B.png"                
                 }
             }
         }
