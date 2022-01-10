@@ -12,8 +12,16 @@
             "title":"Bind: Postplant Viper Lineups",
             "description":"Use these two postplant molly lineups on Bind with Viper. The two poisonous puddles her snakebite ability creates will prevent the enemies from defusing the spike. Shoot the ability six seconds apart for best effect. ",
             "positions": {
-                "A_site":"A site Bind",
-                "B_site":"B site Bind"
+                "A_site":{
+                    "name":"A site Bind",
+                    "clip1":"video/A_Bind_1.mp4",
+                    "clip2":"video/A_Bind_2.mp4"
+                },
+                "B_site":{
+                    "name":"B site Bind",
+                    "clip1":"video/A_Bind_1.mp4",
+                    "clip2":"video/A_Bind_2.mp4"
+                }
             }
         },
         "breeze": {

@@ -19,18 +19,20 @@ export default function Main() {
     }
 
     //Använd useParams för att hämta rätt JSON information. Ascent: Postplant Viper Lineups
-    const title = Data.map[result].title
-    const description = Data.map[result].description
-    const aSite = Data.map[result].positions.A_site
-    const bSite = Data.map[result].positions.B_site
+    const title = Data.map[result].title;
+    const description = Data.map[result].description;
+    const aSite = Data.map[result].positions.A_site.name;
+    const aSite_1 = Data.map[result].positions.A_site.clip1;
+    const aSite_2 = Data.map[result].positions.A_site.clip2;
+    const bSite = Data.map[result].positions.B_site.name;
 
     return ( 
         <Container fluid>
         <Row>
-          <Col xs={2} className='Leftside'>
+          <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
             <LeftSide />
           </Col>
-          <Col xs={8} className='Main'>
+          <Col md={12} lg={8} className='Main'>
                 <Container>
 
                     <Row className='Title' id="pageTitleRow">
@@ -53,10 +55,14 @@ export default function Main() {
                         </Row>
                         <Row className=''>
                             <Col>
-                                <img src="val1.jpg" width="250" height="300"/>
+                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src={aSite_1} type="video/mp4" />
+                                </video>
                             </Col>
-                            <Col>
-                                <img src="val2.jpg" width="250" height="300"/>
+                            <Col md={6}>
+                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src={aSite_2} type="video/mp4" />
+                                </video>
                             </Col>
                         </Row>
                     </Container>
@@ -68,10 +74,14 @@ export default function Main() {
                         </Row>
                         <Row className=''>
                             <Col>
-                                <img src="val2.jpg" width="250" height="300"/>
+                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src="video/A_Bind_1.mp4" type="video/mp4" />
+                                </video>
                             </Col>
                             <Col>
-                                <img src="val1.jpg" width="250" height="300"/>
+                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                <source src="video/A_Bind_2.mp4" type="video/mp4" />
+                                </video>
                             </Col>
                         </Row>
                         <Row className='BottomBanner'>
@@ -85,11 +95,11 @@ export default function Main() {
                 </Container>
           </Col>
           
-          <Col xs={2} className='SideBanner'>
+          <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
             <p>Banner</p>
           </Col>
         </Row>
       </Container>
-        
+    
     )
 }

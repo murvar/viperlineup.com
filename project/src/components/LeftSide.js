@@ -11,7 +11,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 export default function LeftSide() {
     
     return (
-        <div>
+        <div className='Navbar'>
             <h2>Maps</h2>
             
             <Link to="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.png"/></Link>
