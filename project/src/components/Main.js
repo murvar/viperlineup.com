@@ -25,6 +25,8 @@ export default function Main() {
     const aSite_1 = Data.map[result].positions.A_site.clip1;
     const aSite_2 = Data.map[result].positions.A_site.clip2;
     const bSite = Data.map[result].positions.B_site.name;
+    const bSite_1 = Data.map[result].positions.B_site.clip1;
+    const bSite_2 = Data.map[result].positions.B_site.clip2;
 
     return ( 
         <Container fluid>
@@ -65,12 +67,12 @@ export default function Main() {
                         </Row>
                         <Row className=''>
                             <Col>
-                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                <video key={aSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                                     <source src={aSite_1} type="video/mp4" />
                                 </video>
                             </Col>
                             <Col md={6}>
-                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                <video key={aSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                                     <source src={aSite_2} type="video/mp4" />
                                 </video>
                             </Col>
@@ -84,13 +86,13 @@ export default function Main() {
                         </Row>
                         <Row className=''>
                             <Col>
-                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                    <source src="video/A_Bind_1.mp4" type="video/mp4" />
+                                <video key={bSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src={bSite_1} type="video/mp4" />
                                 </video>
                             </Col>
                             <Col>
-                                <video width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                <source src="video/A_Bind_2.mp4" type="video/mp4" />
+                                <video key={bSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                <source src={bSite_2} type="video/mp4" />
                                 </video>
                             </Col>
                         </Row>
