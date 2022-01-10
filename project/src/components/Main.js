@@ -35,6 +35,16 @@ export default function Main() {
           <Col md={12} lg={8} className='Main'>
                 <Container>
 
+                    <Row className="d-block d-lg-none">
+                        <div className="dropdown">
+                            <button className="btn btn-secondary dropdown-toggle dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Maps
+                            </button>
+                            <div class="dropdown-content">
+                            <LeftSide/>
+                            </div>
+                        </div>
+                    </Row>
                     <Row className='Title' id="pageTitleRow">
                         <Col>
                             <h1 id="pageTitle">
