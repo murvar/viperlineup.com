@@ -1,40 +1,39 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams
-  } from "react-router-dom";
 import { Row, Col, Container } from 'react-bootstrap';
 
-export default function Position(name, clip1, clip2, instructions, image) {
-    
+export default function Position(position) {
+    position = position.position;
+    const site = position.name;
+    const clip_1 = position.clip1;
+    const clip_2 = position.clip2;
+    const site_Instructions = position.instructions.map((instruction) => <li key={instruction}>{instruction}</li>);
+    const site_Image = position.siteImage;
+
     return (
         <Container className='PositionBox'>
             <Row className='Position'>
                 <h2>
-                    {name}
+                    {site}
                 </h2>
             </Row>
             <Row className=''>
                 <Col lg={12} xl={6}>
-                    <video key={clip1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                        <source src={clip1} type="video/mp4" />
+                    <video key={clip_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                        <source src={clip_1} type="video/mp4" />
                     </video>
                 </Col>
                 <Col lg={12} xl={6}>
-                    <video key={clip2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                    <source src={clip2} type="video/mp4" />
+                    <video key={clip_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                    <source src={clip_2} type="video/mp4" />
                     </video>
                 </Col>
             </Row>
-            <Row className=''>
+            <Row className='mt-3'>
                 <Col lg={12} xl={6}>
-                    <ul className="instructions">{instructions}</ul>
+                    <ul className="instructions">{site_Instructions}</ul>
                 </Col>
                 <Col lg={12} xl={6}>
-                    <img src={image} width="100%" height="100%"/>
+                    <img src={site_Image} alt="POV Postplant" width="100%" height="100%"/>
                 </Col>
             </Row>
 

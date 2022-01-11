@@ -2,9 +2,7 @@
 .Main {
   border-style: solid;
   border-color: black;
-  justify-content: center;
-
-  
+  justify-content: center; 
   background-color:#3a3a3a;
   background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, #3a3a3a 100%);
 }
@@ -53,7 +51,12 @@
   background-color: #15cf74;
   background-color:rgba(36,31,31,1);
   text-align: center;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  padding-top: 20px;
+
 }
+
 
 .imagebutton {
   height:auto;
