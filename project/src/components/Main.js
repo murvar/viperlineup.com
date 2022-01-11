@@ -13,14 +13,8 @@ import Position from './Position';
 
 export default function Main(map) {
 
-    console.log(map)
     let result = map.map;
-    
 
-
-
-    //Använd useParams för att hämta rätt JSON information. Ascent: Postplant Viper Lineups
-    
     const title = Data.map[result].title;
     const description = Data.map[result].description;
 
@@ -28,15 +22,11 @@ export default function Main(map) {
         if (typeof Data.map[result].positions.C_site === 'object') {
             return (
                 <Position position = {Data.map[result].positions.C_site} />
-
             )
-            
         }
         else {return <p/>}
     }
 
-
-    console.log("result matched MapArray")
     return ( 
         <Container fluid className='d-flex flex-wrap flex-column'>
         <Row>
