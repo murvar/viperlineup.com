@@ -9,9 +9,12 @@ import {
   } from "react-router-dom";
 import Data from "../data"
 import LeftSide from './LeftSide';
+import Position from './Position';
 
 
 export default function Main() {
+
+
 
     let navigate = useNavigate();
 
@@ -19,16 +22,14 @@ export default function Main() {
     let result = "";
     if (map != null) {
         result = map.toLowerCase();
-        console.log(Data.map[result])
-        if (!Data.hasOwnProperty(result)) {
-            //Replace this with home later
-            navigate("/Haven", {replace: true});
-        }
     }
+
+    const MapArray = ["ascent", "bind", "breeze", "fracture", "haven", "icebox", "split"]
 
     //Använd useParams för att hämta rätt JSON information. Ascent: Postplant Viper Lineups
     const title = Data.map[result].title;
     const description = Data.map[result].description;
+   
 
     const aSite = Data.map[result].positions.A_site.name;
     const aSite_1 = Data.map[result].positions.A_site.clip1;
@@ -57,22 +58,22 @@ export default function Main() {
                             </h2>
                         </Row>
                         <Row className=''>
-                            <Col>
+                            <Col lg={12} xl={6}>
                                 <video key={cSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                                     <source src={cSite_1} type="video/mp4" />
                                 </video>
                             </Col>
-                            <Col>
+                            <Col lg={12} xl={6}>
                                 <video key={cSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                                 <source src={cSite_2} type="video/mp4" />
                                 </video>
                             </Col>
                         </Row>
                         <Row className=''>
-                            <Col>
+                            <Col lg={12} xl={6}>
                                 <ul className="instructions">{cSite_Instructions}</ul>
                             </Col>
-                            <Col>
+                            <Col lg={12} xl={6}>
                                 <img src={cSite_Image} width="100%" height="100%"/>
                             </Col>
                         </Row>
@@ -84,109 +85,123 @@ export default function Main() {
         else {return <p/>}
     }
 
-    return ( 
-        <Container fluid className='d-flex flex-wrap'>
-        <Row>
-          <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
-            <LeftSide />
-          </Col>
-          <Col md={12} lg={8} className='Main'>
-                <Container>
-                    <Container className="d-block d-lg-none">
-                        <div className="dropdown">
-                            <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Maps
-                            </button>
-                            <div className="dropdown-content fixed-top w-50">
-                            <LeftSide/>
-                            </div>
-                        </div>
-                    </Container>
-                    <Row className='Title' id="pageTitleRow">
-                        <Col>
-                            <h1 id="pageTitle">
-                                {title}
-                            </h1>
-                        </Col>
-                    </Row>
-                    <Row className='Description'>
-                        <h3>
-                        {description}
-                        </h3>
-                    </Row>
-                    <Container className='PositionBox'>
-                        <Row className='Position'>
-                            <h2>
-                               {aSite}
-                            </h2>
-                        </Row>
-                        <Row className=''>
-                            <Col>
-                                <video key={aSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                    <source src={aSite_1} type="video/mp4" />
-                                </video>
-                            </Col>
-                            <Col md={6}>
-                                <video key={aSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                    <source src={aSite_2} type="video/mp4" />
-                                </video>
-                            </Col>
-                        </Row>
-                        <Row className=''>
-                            <Col>
-                                <ul className="instructions">{aSite_Instructions}</ul>
-                            </Col>
-                            <Col>
-                                <img src={aSite_Image} width="100%" height="100%"/>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <Container className='PositionBox'>
-                        <Row className='Position'>
-                            <h2>
-                                {bSite}
-                            </h2>
-                        </Row>
-                        <Row className=''>
-                            <Col>
-                                <video key={bSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                    <source src={bSite_1} type="video/mp4" />
-                                </video>
-                            </Col>
-                            <Col>
-                                <video key={bSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
-                                <source src={bSite_2} type="video/mp4" />
-                                </video>
-                            </Col>
-                        </Row>
-                        <Row className=''>
-                            <Col>
-                                <ul className="instructions">{bSite_Instructions}</ul>
-                            </Col>
-                            <Col>
-                                <img src={bSite_Image} width="100%" height="100%"/>
-                            </Col>
-                        </Row>
-
-                    </Container>
-
-                    <ThirdSite />
-                        
-                    <Row className='BottomBanner fixed-bottom' >
-                        <Col>
-                            <p>Banner</p>
-                        </Col>
-
-                    </Row>
-
-                </Container>
-          </Col>
-          
-          <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
-            <p>Banner</p>
-          </Col>
-        </Row>
-      </Container>
+    function redirect() {
+        console.log("We in here")
+        navigate("/", {replace: true});
+    }
     
-    )
+    if(MapArray.includes(result)) {
+        console.log("result matched MapArray")
+        return ( 
+            <Container fluid className='d-flex flex-wrap flex-column'>
+            <Row>
+            <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
+                <LeftSide />
+            </Col>
+            <Col  md={12} lg={8} className='Main' id="main">
+                    <Container>
+                        <Container className="d-block d-lg-none">
+                            <div className="dropdown">
+                                <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Maps
+                                </button>
+                                <div className="dropdown-content fixed-top w-50">
+                                <LeftSide/>
+                                </div>
+                            </div>
+                        </Container>
+                        <Row className='Title' id="pageTitleRow">
+                            <Col>
+                                <h1 id="pageTitle">
+                                    {title}
+                                </h1>
+                            </Col>
+                        </Row>
+                        <Row className='Description'>
+                            <h3>
+                            {description}
+                            </h3>
+                        </Row>
+
+                        <Container className='PositionBox'>
+                            <Row className='Position'>
+                                <h2>
+                                {aSite}
+                                </h2>
+                            </Row>
+                            <Row className=''>
+                                <Col lg={12} xl={6}>
+                                    <video key={aSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                        <source src={aSite_1} type="video/mp4" />
+                                    </video>
+                                </Col>
+                                <Col lg={12} xl={6}>
+                                    <video key={aSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                        <source src={aSite_2} type="video/mp4" />
+                                    </video>
+                                </Col>
+                            </Row>
+                            <Row className=''>
+                                <Col lg={12} xl={6}>
+                                    <ul className="instructions">{aSite_Instructions}</ul>
+                                </Col>
+                                <Col lg={12} xl={6}>
+                                    <img src={aSite_Image} width="100%" height="100%"/>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <Container className='PositionBox'>
+                            <Row className='Position'>
+                                <h2>
+                                    {bSite}
+                                </h2>
+                            </Row>
+                            <Row className=''>
+                                <Col lg={12} xl={6}>
+                                    <video key={bSite_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                        <source src={bSite_1} type="video/mp4" />
+                                    </video>
+                                </Col>
+                                <Col lg={12} xl={6}>
+                                    <video key={bSite_2} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
+                                    <source src={bSite_2} type="video/mp4" />
+                                    </video>
+                                </Col>
+                            </Row>
+                            <Row className=''>
+                                <Col lg={12} xl={6}>
+                                    <ul className="instructions">{bSite_Instructions}</ul>
+                                </Col>
+                                <Col lg={12} xl={6}>
+                                    <img className="instructions" src={bSite_Image} width="100%" height="100%"/>
+                                </Col>
+                            </Row>
+
+                        </Container>
+
+                        <ThirdSite />
+                            
+                        <Row className='BottomBanner fixed-bottom'>
+                            <Col>
+                                <p>Banner</p>
+                            </Col>
+
+                        </Row>
+
+                    </Container>
+            </Col>
+            
+            <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
+                <p>Banner</p>
+            </Col>
+            </Row>
+        </Container>
+        
+        )
+    } 
+    else {
+        return (
+            <div>{redirect}</div>
+        )    
+    }
 }

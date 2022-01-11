@@ -10,6 +10,7 @@ export default function Webpages(){
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/:map" element={<Main />} />
+                {/*<Route path="*" element={<Home />} /> */}
             </Routes>
         </Router>
         </div>
