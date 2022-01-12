@@ -17,6 +17,7 @@
 .Description {
   border-style: solid;
   background-color: #15cf74;
+  text-align: center;
 }
 
 .Position {
@@ -34,12 +35,14 @@
   border-style: solid;
   background-color: #15cf74;
   background-color:#3a3a3a;
+  color: white;
 }
 
 .BottomBanner {
   border-style: solid;
   background-color: #15cf74;
   background-color:#3a3a3a;
+  color: white;
 }
 
 .Leftside {
@@ -57,9 +60,14 @@
 
 }
 
+.LeftTitle {
+  color: white;
+  
+}
+
 
 .imagebutton {
-  height:auto;
+  height:100%;
   width:100%;
   border-radius: 10px;
 }
@@ -89,11 +97,11 @@
 
 .dropdown-content {
   display: none;
-  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  max-height: 70vh;
+  height: auto;
+  width: auto;
   overflow-y: auto;
 
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
 import Main from './Main';
+import Home from './Home';
 
 export default function Webpages(){
 
@@ -10,7 +11,7 @@ export default function Webpages(){
         <div>
         <Router>
             <Routes>
-                <Route path="/" element={<Main />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/Ascent" element={<Main map="ascent"/>} />
                 <Route path="/Bind" element={<Main map="bind"/>} />
                 <Route path="/Breeze" element={<Main map="breeze"/>} />
