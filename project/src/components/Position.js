@@ -32,7 +32,7 @@ export default function Position(position) {
                 <Col lg={12} xl={6}>
                     <ol className="instructions">{site_Instructions}</ol>
                 </Col>
-                <Col lg={12} xl={6}>
+                <Col lg={12} xl={6} className='h-25'>
                     <img src={site_Image} alt="POV Postplant" width="100%" height="100%"/>
                 </Col>
             </Row>

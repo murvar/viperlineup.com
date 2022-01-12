@@ -8,6 +8,27 @@ export default function Webpages(){
     //let navigate = useNavigate();
 
     return(
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAzeUMqW8_bUHFFbMwaJ4sLT2eF9jX11C8",
+            authDomain: "viperlineups-2ba36.firebaseapp.com",
+            projectId: "viperlineups-2ba36",
+            storageBucket: "viperlineups-2ba36.appspot.com",
+            messagingSenderId: "209284842966",
+            appId: "1:209284842966:web:0544d6b8001d2560845077",
+            measurementId: "G-H1RFS9GKJN"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
         <div>
         <Router>
             <Routes>
