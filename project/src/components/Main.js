@@ -9,6 +9,7 @@ import {
 import Data from "../data"
 import LeftSide from './LeftSide';
 import Position from './Position';
+import {Helmet} from "react-helmet";
 
 
 export default function Main(map) {
@@ -17,6 +18,7 @@ export default function Main(map) {
 
     const title = Data.map[result].title;
     const description = Data.map[result].description;
+    const metaDescription = Data.map[result].metaDescription;
 
     function ThirdSite() {
         if (typeof Data.map[result].positions.C_site === 'object') {
@@ -29,53 +31,56 @@ export default function Main(map) {
 
     return ( 
         <Container fluid className='d-flex flex-wrap flex-column'>
-        <Row>
-            <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
-                <h2>Maps</h2>
-                <LeftSide className="sidebar"/>
-            </Col>
-            <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
-                    <Container>
-                        <Container className="d-block d-lg-none">
-                            <div className="dropdown">
-                                <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Maps
-                                </button>
-                                <div className="dropdown-content fixed-top w-50">
-                                <LeftSide className="sidebar"/>
+            <Helmet>
+                <meta name="description" content={metaDescription} />
+            </Helmet>
+            <Row>
+                <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
+                    <h2>Maps</h2>
+                    <LeftSide className="sidebar"/>
+                </Col>
+                <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
+                        <Container>
+                            <Container className="d-block d-lg-none">
+                                <div className="dropdown">
+                                    <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Maps
+                                    </button>
+                                    <div className="dropdown-content fixed-top w-50">
+                                    <LeftSide className="sidebar"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </Container>
-                        <Row className='Title' id="pageTitleRow">
-                            <Col>
-                                <h1 id="pageTitle">
-                                    {title}
-                                </h1>
-                            </Col>
-                        </Row>
-                        <Row className='Description'>
-                            <h3>
-                            {description}
-                            </h3>
-                        </Row>
-                        <Position position = {Data.map[result].positions.A_site} />
-                        <Position position = {Data.map[result].positions.B_site} />
-                        <ThirdSite />
-                            
-                        <Row className='BottomBanner fixed-bottom'>
-                            <Col>
-                                <p>Banner</p>
-                            </Col>
-                        </Row>
+                            </Container>
+                            <Row className='Title' id="pageTitleRow">
+                                <Col>
+                                    <h1 id="pageTitle">
+                                        {title}
+                                    </h1>
+                                </Col>
+                            </Row>
+                            <Row className='Description'>
+                                <h3>
+                                {description}
+                                </h3>
+                            </Row>
+                            <Position position = {Data.map[result].positions.A_site} />
+                            <Position position = {Data.map[result].positions.B_site} />
+                            <ThirdSite />
+                                
+                            <Row className='BottomBanner fixed-bottom'>
+                                <Col>
+                                    <p>Banner</p>
+                                </Col>
+                            </Row>
 
-                    </Container>
-            </Col>
-            
-            <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
-                <p>Banner</p>
-            </Col>
-        </Row>
-    </Container>
+                        </Container>
+                </Col>
+                
+                <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
+                    <p>Banner</p>
+                </Col>
+            </Row>
+        </Container>
     
     )
 }
