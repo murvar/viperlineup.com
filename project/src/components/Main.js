@@ -31,6 +31,7 @@ export default function Main(map) {
         <Container fluid className='d-flex flex-wrap flex-column'>
         <Row>
             <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
+                <h2>Maps</h2>
                 <LeftSide className="sidebar"/>
             </Col>
             <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
@@ -41,7 +42,7 @@ export default function Main(map) {
                                     Maps
                                 </button>
                                 <div className="dropdown-content fixed-top w-50">
-                                <LeftSide/>
+                                <LeftSide className="sidebar"/>
                                 </div>
                             </div>
                         </Container>
