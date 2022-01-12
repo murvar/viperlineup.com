@@ -11,13 +11,13 @@ export default function Position(position) {
 
     return (
         <Container className='PositionBox'>
-            <Row className='Position'>
+            <Row className='Position mt-3'>
                 <h2>
                     {site}
                 </h2>
             </Row>
             <Row className=''>
-                <Col lg={12} xl={6} className='mt-3'>
+                <Col lg={12} xl={6} className=''>
                     <video key={clip_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                         <source src={clip_1} type="video/mp4" />
                     </video>
@@ -28,11 +28,11 @@ export default function Position(position) {
                     </video>
                 </Col>
             </Row>
-            <Row className='mt-3'>
-                <Col lg={12} xl={6}>
+            <Row className=''>
+                <Col lg={12} xl={6} className=''>
                     <ol className="instructions">{site_Instructions}</ol>
                 </Col>
-                <Col lg={12} xl={6}>
+                <Col lg={12} xl={6} className='h-25'>
                     <img src={site_Image} alt="POV Postplant" width="100%" height="100%"/>
                 </Col>
             </Row>

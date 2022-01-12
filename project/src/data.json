@@ -200,7 +200,7 @@
         },
         "split": {
             "title":"Split: Postplant Viper Lineups",
-            "description":"Vipers ability “snakebite” can be used for postplant molly lineups. The ability creates poisonous puddles which prevent the enemy from defusing the bomb on Split.  These lineups are for the default plant. Shoot the ability six seconds apart for best effect.",
+            "description":"Vipers ability “snakebite” can be used for postplant molly lineups. The ability creates poisonous puddles which prevent the enemy from defusing the spike on Split.  These lineups are for the default plant. Shoot the ability six seconds apart for best effect.",
             "positions": {
                 "A_site":{
                     "name":"A site Split",
