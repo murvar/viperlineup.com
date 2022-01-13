@@ -20,14 +20,17 @@ export default function Home() {
                 <meta name="description" content="Default postplant viper molly lineups for all maps. Navigate to find specific map" />
             </Helmet>
             <Row>
-                <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
+                <Col sm={0} md={2} className='LeftSideBanner d-none d-lg-block'>
                     <p>Banner</p>
                 </Col>
                 <Col md={12} lg={{span:8}} className=''>
-                    <Row className='Title'>
+                    <Row>
+                        <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" /></Link>
+                    </Row>
+                    <Row className='Title mt-3'>
                         <h1>Home: All Valorant Maps for Viper Lineups</h1>
                     </Row>
-                    <Row className="Description">
+                    <Row className="Description mt-3">
                         <h3>
                         {Description}
                         </h3>

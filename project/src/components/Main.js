@@ -4,6 +4,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import {
     BrowserRouter as Router,
     useNavigate,
+    Link,
     useParams
   } from "react-router-dom";
 import Data from "../data"
@@ -41,6 +42,9 @@ export default function Main(map) {
                 </Col>
                 <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
                         <Container>
+                            <Row>
+                            <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" /></Link>
+                            </Row>
                             <Container className="d-block d-lg-none">
                                 <div className="dropdown">
                                     <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,14 +55,14 @@ export default function Main(map) {
                                     </div>
                                 </div>
                             </Container>
-                            <Row className='Title' id="pageTitleRow">
+                            <Row className='Title mt-3' id="pageTitleRow">
                                 <Col>
                                     <h1 id="pageTitle">
                                         {title}
                                     </h1>
                                 </Col>
                             </Row>
-                            <Row className='Description'>
+                            <Row className='Description mt-3'>
                                 <h3>
                                 {description}
                                 </h3>
