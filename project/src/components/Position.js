@@ -17,7 +17,7 @@ export default function Position(position) {
                 </h2>
             </Row>
             <Row className=''>
-                <Col lg={12} xl={6} className=''>
+                <Col lg={12} xl={6} className='mt-3'>
                     <video key={clip_1} width="100%" height="100%" autoPlay={true} loop={true} muted={true} playsInline={true}>
                         <source src={clip_1} type="video/mp4" />
                     </video>
@@ -32,7 +32,7 @@ export default function Position(position) {
                 <Col lg={12} xl={6} className=''>
                     <ol className="instructions">{site_Instructions}</ol>
                 </Col>
-                <Col lg={12} xl={6} className='h-25'>
+                <Col lg={12} xl={6} className='h-25 mt-3'>
                     <img src={site_Image} alt="where viper postplant molly lineup lands" width="100%" height="100%"/>
                 </Col>
             </Row>

@@ -27,13 +27,13 @@
   padding-right: 10px;
 }
 
-
 .SideBanner {
   border-style: solid;
   background-color: #15cf74;
   background-color:#3a3a3a;
   color: white;
   border-color: black;
+  height: 100mv;
 }
 
 .BottomBanner {
@@ -121,6 +121,9 @@
   padding-top: 10px;
 }
 
+.homeHeight {
+  height: 100vh;
+}
 
 
 

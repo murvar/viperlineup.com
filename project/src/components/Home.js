@@ -15,15 +15,15 @@ export default function Home() {
 
     return (
 
-        <Container fluid className='PositionBox Main'>
+        <Container fluid className='Main'>
             <Helmet>
                 <meta name="description" content="Default postplant viper molly lineups for all maps. Navigate to find specific map" />
             </Helmet>
             <Row>
-                <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
+                <Col sm={0} md={2} className='SideBanner d-none d-lg-block d-flex'>
                     <p>Banner</p>
                 </Col>
-                <Col  md={10} lg={{span:8}} className=''>
+                <Col md={10} lg={{span:8}} className='homeHeight'>
                     <Row className='Title'>
                         <h1>Home: All Valorant Maps for Viper Lineups</h1>
                     </Row>
@@ -60,7 +60,7 @@ export default function Home() {
                         </Col>
                     </Row>
                     <Row className=''>
-                        <Col lg={12} xl={{span:6, offset:3}} className='mt-3'>
+                        <Col lg={12} xl={{span:6, offset:3}} className='mt-3 mb-3'>
                             <Link to="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.png" /></Link>
                         </Col>
                     </Row>
