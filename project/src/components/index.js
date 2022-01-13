@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
 import Main from './Main';
 import Home from './Home';
+import Privacy from './Privacy';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -40,6 +41,7 @@ export default function Webpages(){
                 <Route path="/Icebox" element={<Main map="icebox"/>} />
                 <Route path="/Haven" element={<Main map="haven"/>} />
                 <Route path="/Split" element={<Main map="split"/>} />
+                <Route path="/privacypolicy" element={<Privacy />} />
                 <Route path="*" element={<Navigate replace to="/" />} />
 
             </Routes>
