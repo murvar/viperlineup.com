@@ -11,12 +11,13 @@ import {Helmet} from "react-helmet";
 
 export default function Home() {
 
-    const Description = "Viper can use her snakebite ability for postplant molly lineups. The ability creates poisonous puddles which prevent the enemy from defusing the spike as they are taking damage. This webpage is a collection of lineups for the most common plant on each site, also called the default plant."
+    const Description = "Viper can use her snakebite ability for postplant molly lineups. The ability creates poisonous puddles which causes the enemy to take damage, preventing them of defusing the spike. This website is a collection of lineups for the most common planting spots on each site. This is often called default plant."
 
     return (
 
         <Container fluid className='Main'>
             <Helmet>
+                <title>Postplant Viper Lineups</title>
                 <meta name="description" content="Default postplant viper molly lineups for all maps. Navigate to find specific map" />
             </Helmet>
             <Row>

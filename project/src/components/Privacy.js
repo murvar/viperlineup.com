@@ -15,6 +15,7 @@ export default function Privacy() {
 
         <Container fluid className='Main'>
             <Helmet>
+                <title>Privacy Policy</title>
                 <meta name="description" content="Information about the privacy policy" />
             </Helmet>
             <Row>

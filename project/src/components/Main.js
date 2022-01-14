@@ -40,6 +40,7 @@ export default function Main(map) {
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2476150477980411"
             crossOrigin="anonymous"></script>
             <Helmet>
+                <title>{title}</title>
                 <meta name="description" content={metaDescription} />
             </Helmet>
             <Row>
