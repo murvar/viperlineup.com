@@ -47,7 +47,7 @@
                         "Turn to the right and look up.", 
                         "Aim the crosshair slightly to the right where the metal beam becomes a bugle."
                     ],
-                    "siteImage":"plants/Bind_A.png"
+                    "siteImage":"plants/Bind_A.webp"
                 },
                 "B_site":{
                     "name":"B site Bind",
@@ -59,7 +59,7 @@
                         "Turn to the right.", 
                         "Aim the lower part of the poison cloud ability icon with the top right corner of the wooden frame."
                     ],
-                    "siteImage":"plants/Bind_B.png"
+                    "siteImage":"plants/Bind_B.webp"
                 }
             }
         },
@@ -79,7 +79,7 @@
                         "Turn to the left and loop up.", 
                         "Aim the crosshair in between the right gap of the leaves. "
                     ],
-                    "siteImage":"plants/Breeze_A.png"
+                    "siteImage":"plants/Breeze_A.webp"
                 },
                 "B_site":{
                     "name":"B site Breeze",
@@ -92,7 +92,7 @@
                         "Identify the line between the Poison Cloud and the Toxic Screen abilities.", 
                         "Aim the left point of the line to the dark lower right corner of the stone brick above the wall."
                     ],
-                    "siteImage":"plants/Breeze_B.png"
+                    "siteImage":"plants/Breeze_B.webp"
                 }
             }
         },
@@ -111,7 +111,7 @@
                         "Turn around.", 
                         "Aim the crosshair in the absolute middle of the metal beam."
                     ],
-                    "siteImage":"plants/Fracture_A.png"
+                    "siteImage":"plants/Fracture_A.webp"
                 },
                 "B_site":{
                     "name":"B site Fracture",
@@ -123,7 +123,7 @@
                         "Turn to the right.", 
                         "Aim the top part of Vipers Snakebite ability with the top left corner of the metal object on the wall to the left."
                     ],
-                    "siteImage":"plants/Fracture_B.png" 
+                    "siteImage":"plants/Fracture_B.webp" 
                 }
             }
         },
@@ -143,7 +143,7 @@
                         "Identify the “100” underneath Vipers fuel bar in the middle.",
                         "Aim the “100” in front of the second farmost right lamp."
                     ],
-                    "siteImage":"plants/Haven_A.png"                
+                    "siteImage":"plants/Haven_A.webp"                
                 },
                 "B_site":{
                     "name":"B site Haven",
@@ -155,7 +155,7 @@
                         "Turn around.", 
                         "Aim the crosshair slightly above the top of the temple roof."
                     ],
-                    "siteImage":"plants/Haven_B.png"                
+                    "siteImage":"plants/Haven_B.webp"                
                 },
                 "C_site":{
                     "name":"C site Haven",
@@ -167,7 +167,7 @@
                         "Turn around.", 
                         "Aim the farmost left line of Vipers Snakebite ability with the corner of the two stones."
                     ],
-                    "siteImage":"plants/Haven_C.png"                
+                    "siteImage":"plants/Haven_C.webp"                
                 }
             }
         },
@@ -186,7 +186,7 @@
                         "Turn around.", 
                         "Aim the crosshair at the right corner of the shadow from the metal beam."
                     ],
-                    "siteImage":"plants/Icebox_A.png"                
+                    "siteImage":"plants/Icebox_A.webp"                
                 },
                 "B_site":{
                     "name":"B site Icebox",
@@ -200,7 +200,7 @@
                         "Aim the crosshair in the middle of the dark area directly above the edge.",
                         "Jump and shoot before you reach the top of the jump(Observe, this lineup may be inconsistent and hard to perform)."
                     ],
-                    "siteImage":"plants/Icebox_B.png"                
+                    "siteImage":"plants/Icebox_B.webp"                
                 }
             }
         },
@@ -219,7 +219,7 @@
                         "Turn slightly to the left and look up.", 
                         "Aim the crosshair slightly to the right of the right lightbeam and just a bit under the corner of the building to the left."
                     ],
-                    "siteImage":"plants/Split_A.png"                
+                    "siteImage":"plants/Split_A.webp"                
                 },
                 "B_site":{
                     "name":"B site Split",
@@ -232,7 +232,7 @@
                         "Identify the green sign.",
                         "Aim the crosshair slightly to the right of the left side on the sign"
                     ],
-                    "siteImage":"plants/Split_B.png"                
+                    "siteImage":"plants/Split_B.webp"                
                 }
             }
         }
