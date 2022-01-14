@@ -13,7 +13,7 @@
                     [
                         "Walk up to the corner of the box and wall at A Lobby.", 
                         "Turn to your right.", 
-                        "Line up the lower left corner of Vipers fuel bar with the upper right corner of the metal box."
+                        "Align the lower left corner of Vipers fuel bar with the upper right corner of the metal box."
                     ],
                     "siteImage":"plants/Ascent_A.png"
                 },
@@ -227,7 +227,7 @@
                     "clip2":"video/Split/B_Split_2.mp4",
                     "instructions":
                     [
-                        "Walk up to the corner of the eletricbox and the wall at B Lobby.", 
+                        "Walk up to the corner of the electrical box and the wall at B Lobby.", 
                         "Turn around.", 
                         "Identify the green sign.",
                         "Aim the crosshair slightly to the right of the left side on the sign"
