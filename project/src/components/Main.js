@@ -10,6 +10,8 @@ import {
 import Data from "../data"
 import LeftSide from './LeftSide';
 import Position from './Position';
+import SideBanner from './SideBanner';
+import BottomBanner from './BottomBanner';
 import {Helmet} from "react-helmet";
 
 
@@ -31,7 +33,12 @@ export default function Main(map) {
     }
 
     return ( 
+        
         <Container fluid className='d-flex flex-wrap flex-column'>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2476150477980411"
+            crossOrigin="anonymous"></script>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2476150477980411"
+            crossOrigin="anonymous"></script>
             <Helmet>
                 <meta name="description" content={metaDescription} />
             </Helmet>
@@ -74,6 +81,7 @@ export default function Main(map) {
                             <Row className='BottomBanner fixed-bottom'>
                                 <Col>
                                     <p>Banner</p>
+                                    <BottomBanner />
                                 </Col>
                             </Row>
 
@@ -82,6 +90,7 @@ export default function Main(map) {
                 
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
                     <p>Banner</p>
+                    <SideBanner />
                 </Col>
             </Row>
         </Container>
