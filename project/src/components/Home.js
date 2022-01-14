@@ -17,6 +17,7 @@ export default function Home() {
 
         <Container fluid className='Main'>
             <Helmet>
+                <title>Postplant Viper Lineups</title>
                 <meta name="description" content="Default postplant viper molly lineups for all maps. Navigate to find specific map" />
             </Helmet>
             <Row>
