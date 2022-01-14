@@ -26,7 +26,7 @@ export default function Home() {
                 </Col>
                 <Col md={12} lg={{span:8}} className=''>
                     <Row>
-                        <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" /></Link>
+                        <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" alt="Home" /></Link>
                     </Row>
                     <Row className='Title mt-3'>
                         <h1>Home: All Valorant Maps for Viper Lineups</h1>

@@ -51,7 +51,7 @@ export default function Main(map) {
                 <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
                         <Container>
                             <Row>
-                            <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" /></Link>
+                            <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" alt="Home"/></Link>
                             </Row>
                             <Container className="d-block d-lg-none">
                                 <div className="dropdown">

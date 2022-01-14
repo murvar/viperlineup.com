@@ -15,7 +15,7 @@
                         "Turn to your right.", 
                         "Align the lower left corner of Vipers fuel bar with the upper right corner of the metal box."
                     ],
-                    "siteImage":"plants/Ascent_A.png"
+                    "siteImage":"plants/Ascent_A.webp"
                 },
                 "B_site":{
                     "name":"B site Ascent",
@@ -28,7 +28,7 @@
                         "Identify the “100” underneath Vipers fuel bar in the middle.", 
                         "Place the “100” in front of the dark gray area by the roof."
                     ],
-                    "siteImage":"plants/Ascent_B.png"
+                    "siteImage":"plants/Ascent_B.webp"
                 }
             }
         },
