@@ -10,6 +10,7 @@ import {Helmet} from "react-helmet";
 
 
 export default function Main(map) {
+    window.scrollTo(0,0);
 
     let result = map.map;
 
@@ -26,6 +27,17 @@ export default function Main(map) {
         else {return <p/>}
     }
 
+    window.onscroll = function(e) { 
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        var header = document.querySelector('ul');
+    
+        scrollY <= this.lastScroll 
+          ? header.style.visibility = 'visible'
+          : header.style.visibility = 'hidden'; 
+    
+        this.lastScroll = scrollY ;
+    }
+
     return ( 
         
         <Container fluid className='d-flex flex-wrap flex-column'>
@@ -37,28 +49,31 @@ export default function Main(map) {
                 <title>{title}</title>
                 <meta name="description" content={metaDescription} />
             </Helmet>
+            <Row className="d-block d-lg-none fixed-top">
+                <ul>
+                    <li>
+                        <Link to="/"><input type="image" name="Home" src="home.jpg" alt="Home" width={80}/></Link>                  
+                    </li>
+                    <li>
+                        <div className="dropdown">
+                            <button className="btn btn-secondary dropdown-toggle dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Maps
+                            </button>
+                            <div className="dropdown-content fixed-top w-50">
+                            <LeftSide className="sidebar"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </Row>
             <Row>
                 <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
+                    <Link to="/"><input className="" width="50%" type="image" name="Home" src="home.jpg" alt="Home" /></Link>
                     <h2>Maps</h2>
                     <LeftSide className="sidebar"/>
                 </Col>
                 <Col  md={12} lg={{span:8, offset:2}} className='Main' id="main">
                         <Container>
-                            {/*
-                            <Row>
-                            <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" alt="Home"/></Link>
-                            </Row>
-                            */}
-                            <Container className="d-block d-lg-none">
-                                <div className="dropdown">
-                                    <button className="btn btn-secondary dropdown-toggle dropbtn fixed-top" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Maps
-                                    </button>
-                                    <div className="dropdown-content fixed-top w-50">
-                                    <LeftSide className="sidebar"/>
-                                    </div>
-                                </div>
-                            </Container>
                             <Row className='Title mt-3' id="pageTitleRow">
                                 <Col>
                                     <h1 id="pageTitle">
@@ -75,12 +90,7 @@ export default function Main(map) {
                             <Position position = {Data.map[result].positions.B_site} />
                             <ThirdSite />
                                 
-                            <Row className='BottomBanner fixed-bottom'>
-                                <Col>
-                                    <p>Banner</p>
-                                    <BottomBanner />
-                                </Col>
-                            </Row>
+                            
 
                         </Container>
                 </Col>
@@ -90,6 +100,12 @@ export default function Main(map) {
                     <SideBanner />
                 </Col>
             </Row>
+            {/*<Row className='BottomBanner fixed-bottom'>
+                <Col>
+                    <p>Banner</p>
+                    <BottomBanner />
+                </Col>
+    </Row>*/}
         </Container>
     
     )
