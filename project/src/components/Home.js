@@ -7,6 +7,8 @@ export default function Home() {
 
     const Description = "Viper can use her snakebite ability for postplant molly lineups. The ability creates poisonous puddles which causes the enemy to take damage, preventing them of defusing the spike. This website is a collection of lineups for the most common planting spots on each site. This is often called default plant."
 
+    window.scrollTo(0,0);
+
     return (
 
         <Container fluid className='Main'>
@@ -64,11 +66,11 @@ export default function Home() {
                             <Link to="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.webp" /></Link>
                         </Col>
                     </Row>
-                    <Row className='BottomBanner fixed-bottom'>
+                    {/*<Row className='BottomBanner fixed-bottom'>
                             <Col>
                                 <p>Banner</p>
                             </Col>
-                    </Row>
+                </Row>*/}
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
                     <p>Banner</p>
