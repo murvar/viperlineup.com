@@ -16,9 +16,6 @@ export default function Privacy() {
                     <p>Banner</p>
                 </Col>
                 <Col md={12} lg={{span:8}} className=''>
-                    <Row className='Title'>
-                        <h1>Privacy Policy</h1>
-                    </Row>
                     <Row className="Description">
                         <h1>Privacy Policy</h1>
                             <p>Last updated: January 13, 2022</p>

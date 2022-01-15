@@ -26,9 +26,9 @@ export default function Home() {
                         <h1>Home: All Valorant Maps for Viper Lineups</h1>
                     </Row>
                     <Row className="Description mt-3">
-                        <h3>
+                        <p>
                         {Description}
-                        </h3>
+                        </p>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>

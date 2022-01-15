@@ -65,9 +65,9 @@ export default function Main(map) {
                                 </Col>
                             </Row>
                             <Row className='Description mt-3'>
-                                <h3>
+                                <p>
                                 {description}
-                                </h3>
+                                </p>
                             </Row>
                             <Position position = {Data.map[result].positions.A_site} />
                             <Position position = {Data.map[result].positions.B_site} />
