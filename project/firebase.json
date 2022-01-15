@@ -11,7 +11,7 @@
       "destination": "/index.html"
     } ],
     "headers": [{
-      "source": "**/*.@(mp4|png)",
+      "source": "**/*.@(mp4|png|webp)",
       "headers": [ 
         {"key": "Access-Control-Allow-Origin", "value": "*"},
         {"key": "X-Content-Type-Options", "value": "nosniff"},
