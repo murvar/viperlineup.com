@@ -1,12 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 
 export default function Home() {

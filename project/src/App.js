@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Webpages from "./components/index.js"
-import {Helmet} from "react-helmet";
-
-import { Row, Col, Container } from 'react-bootstrap';
 
 function App() {
   return (

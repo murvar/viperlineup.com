@@ -1,12 +1,6 @@
 import React from 'react';
-import { useEffect } from "react";
 import { Row, Col, Container } from 'react-bootstrap';
-import {
-    BrowserRouter as Router,
-    useNavigate,
-    Link,
-    useParams
-  } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Data from "../data"
 import LeftSide from './LeftSide';
 import Position from './Position';
