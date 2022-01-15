@@ -75,8 +75,20 @@
 
 .LeftTitle {
   color: white;
-  
+  overflow: auto;
 }
+
+/* BACKGROUND MENY */
+.navbar-collapse {
+  background-color: rgba(36,31,31,1);
+}
+
+/* BACKGROUND MENU BUTTON*/
+.navbar-toggler.collapsed {
+  background-color: rgba(36,31,31,1);
+}
+
+
 
 .Banner {
   height:100%;

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Data from "../data"
 import LeftSide from './LeftSide';
 import Position from './Position';
+import HamburgerMenu from './HamburgerMenu';
 import SideBanner from './SideBanner';
 import BottomBanner from './BottomBanner';
 import {Helmet} from "react-helmet";
@@ -50,21 +51,9 @@ export default function Main(map) {
                 <meta name="description" content={metaDescription} />
             </Helmet>
             <Row className="d-block d-lg-none fixed-top">
-                <ul>
-                    <li>
-                        <Link to="/"><input type="image" name="Home" src="home.jpg" alt="Home" width={80}/></Link>                  
-                    </li>
-                    <li>
-                        <div className="dropdown">
-                            <button className="btn btn-secondary dropdown-toggle dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Maps
-                            </button>
-                            <div className="dropdown-content fixed-top w-50">
-                            <LeftSide className="sidebar"/>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+
+                <HamburgerMenu className="sidebar"/>
+
             </Row>
             <Row>
                 <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
