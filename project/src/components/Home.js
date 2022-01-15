@@ -32,34 +32,34 @@ export default function Home() {
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.png"/></Link>
+                            <Link to="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.webp"/></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Bind"><input className="imagebutton" type="image" name="Bind" src="maps/bind.png" /></Link>
+                            <Link to="/Bind"><input className="imagebutton" type="image" name="Bind" src="maps/bind.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Breeze"><input className="imagebutton" type="image" name="Breeze" src="maps/breeze.png" /></Link>
+                            <Link to="/Breeze"><input className="imagebutton" type="image" name="Breeze" src="maps/breeze.webp" /></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Fracture"><input className="imagebutton" type="image" name="Fracture" src="maps/fracture.png" /></Link>
+                            <Link to="/Fracture"><input className="imagebutton" type="image" name="Fracture" src="maps/fracture.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Haven"><input className="imagebutton" type="image" name="Haven" src="maps/haven.png" /></Link>
+                            <Link to="/Haven"><input className="imagebutton" type="image" name="Haven" src="maps/haven.webp" /></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Icebox"><input className="imagebutton" type="image" name="Icebox" src="maps/icebox.png" /></Link>
+                            <Link to="/Icebox"><input className="imagebutton" type="image" name="Icebox" src="maps/icebox.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={{span:6, offset:3}} className='mt-3 mb-5'>
-                            <Link to="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.png" /></Link>
+                            <Link to="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className='BottomBanner fixed-bottom'>
