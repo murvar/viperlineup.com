@@ -1,0 +1,22 @@
+
+/* BACKGROUND MENY */
+.navbar-collapse {
+  background-color: rgba(36,31,31,1);
+}
+
+/* BACKGROUND MENU BUTTON*/
+.navbar-toggler.collapsed {
+  background-color: rgba(36,31,31,1);
+}
+
+.dropdown-menu.show {
+  background-color: rgba(36,31,31,1);
+}
+
+.nav-link {
+  padding-left: 100px;
+}
+
+.toggleBtn {
+  background-color: rgba(36,31,31,1);
+}

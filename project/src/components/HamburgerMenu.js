@@ -1,23 +1,29 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import {Link} from "react-router-dom";
+import '../customCSS/hamburger.css';
 
 export default function HamburgerMenu() {
     
     return (
         <div className='LeftTitle'>
-            <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" navbarScroll style={{ maxHeight: '100vh' }}>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+            <Navbar class="toggleBtn" collapseOnSelect expand="lg" bg="transparent" variant="dark" navbarScroll style={{ maxHeight: '100vh' }}>
+                <Navbar.Toggle class="toggleBtn" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/"><input className="imagebutton" width="50%" type="image" name="Home" src="home.jpg" alt="Home" /></Nav.Link>
-                        <Nav.Link href="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.webp"/></Nav.Link>
-                        <Nav.Link href="/Bind"><input className="imagebutton" type="image" name="Bind" src="maps/bind.webp"/></Nav.Link>
-                        <Nav.Link href="/Breeze"><input className="imagebutton" type="image" name="Breeze" src="maps/breeze.webp"/></Nav.Link>
-                        <Nav.Link href="/Fracture"><input className="imagebutton" type="image" name="Fracture" src="maps/fracture.webp"/></Nav.Link>
-                        <Nav.Link href="/Haven"><input className="imagebutton" type="image" name="Haven" src="maps/haven.webp"/></Nav.Link>
-                        <Nav.Link href="/Icebox"><input className="imagebutton" type="image" name="Icebox" src="maps/icebox.webp"/></Nav.Link>
-                        <Nav.Link href="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.webp"/></Nav.Link>
+                        
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <NavDropdown title="Maps" id="collapse-nav-dropdown" bg="dark">
+                            <NavDropdown.Item href="/Ascent"><input className="imagebutton" type="image" name="Ascent" src="maps/ascent.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Bind"><input className="imagebutton" type="image" name="Bind" src="maps/bind.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Breeze"><input className="imagebutton" type="image" name="Breeze" src="maps/breeze.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Fracture"><input className="imagebutton" type="image" name="Fracture" src="maps/fracture.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Haven"><input className="imagebutton" type="image" name="Haven" src="maps/haven.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Icebox"><input className="imagebutton" type="image" name="Icebox" src="maps/icebox.webp"/></NavDropdown.Item>
+                            <NavDropdown.Item href="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.webp"/></NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="/about-us">About us</Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
