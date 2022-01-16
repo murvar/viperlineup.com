@@ -28,17 +28,6 @@ export default function Main(map) {
         else {return <p/>}
     }
 
-    window.onscroll = function(e) { 
-        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-        var header = document.querySelector('ul');
-    
-        scrollY <= this.lastScroll 
-          ? header.style.visibility = 'visible'
-          : header.style.visibility = 'hidden'; 
-    
-        this.lastScroll = scrollY ;
-    }
-
     return ( 
         
         <Container fluid className='d-flex flex-wrap flex-column'>
