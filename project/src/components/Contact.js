@@ -3,6 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import LeftSide from './LeftSide';
+import HamburgerMenu from './HamburgerMenu';
 
 export default function Contact() {
 
@@ -13,6 +14,11 @@ export default function Contact() {
                 <title>Contact</title>
                 <meta name="description" content="Information about the website" />
             </Helmet>
+            <Row className="d-block d-lg-none fixed-top">
+
+                <HamburgerMenu className="sidebar"/>
+
+            </Row>
             <Row>
                 <Col sm={0} md={2} className='Leftside d-none d-lg-block'>
                     <Link to="/"><input className="" width="50%" type="image" name="Home" src="home.jpg" alt="Home" /></Link>
@@ -27,7 +33,7 @@ export default function Contact() {
                     </Row>
                     <Row className='Description mt-3'>
                         <p>
-                            We would love to get you feedback!
+                            We would love to get your feedback!
                             <br/>
                             Please reach out to us at viperpostplant@gmail.com
                         </p>

@@ -22,7 +22,8 @@ export default function HamburgerMenu() {
                             <NavDropdown.Item href="/Icebox"><input className="imagebutton" type="image" name="Icebox" src="maps/icebox.webp"/></NavDropdown.Item>
                             <NavDropdown.Item href="/Split"><input className="imagebutton" type="image" name="Split" src="maps/split.webp"/></NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/about-us">About us</Nav.Link>
+                        <Nav.Link href="/About">About us</Nav.Link>
+                        <Nav.Link href="/Contact">Contact</Nav.Link>
 
                     </Nav>
                 </Navbar.Collapse>

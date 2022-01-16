@@ -6,7 +6,6 @@ import LeftSide from './LeftSide';
 import Position from './Position';
 import HamburgerMenu from './HamburgerMenu';
 import SideBanner from './SideBanner';
-import BottomBanner from './BottomBanner';
 import {Helmet} from "react-helmet";
 
 

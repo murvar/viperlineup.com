@@ -92,6 +92,12 @@
   border-radius: 10px;
 }
 
+.imagebutton_big {
+  height:100%;
+  width:100%;
+  border-radius: 10px;
+}
+
 .imagebutton:hover {
   transform: scale(1.05);
   filter: brightness(150%);

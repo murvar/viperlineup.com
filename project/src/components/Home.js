@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
+import HamburgerMenu from './HamburgerMenu';
 
 export default function Home() {
 
@@ -16,6 +17,11 @@ export default function Home() {
                 <title>Postplant Viper Lineups</title>
                 <meta name="description" content="Default postplant viper molly lineups for all maps. Navigate to find specific map" />
             </Helmet>
+            <Row className="d-block d-lg-none fixed-top">
+
+                <HamburgerMenu className="sidebar"/>
+
+            </Row>
             <Row>
                 <Col sm={0} md={2} className='LeftSideBanner d-none d-lg-block'>
                     <p>Banner</p>
@@ -36,34 +42,34 @@ export default function Home() {
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Ascent"><input className="imagebutton" type="image" alt="Ascent" name="Ascent" src="maps/ascent.webp"/></Link>
+                            <Link to="/Ascent"><input className="imagebutton_big" type="image" alt="Ascent" name="Ascent" src="maps/ascent.webp"/></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Bind"><input className="imagebutton" type="image" alt="Bind" name="Bind" src="maps/bind.webp" /></Link>
+                            <Link to="/Bind"><input className="imagebutton_big" type="image" alt="Bind" name="Bind" src="maps/bind.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Breeze"><input className="imagebutton" type="image" alt="Breeze" name="Breeze" src="maps/breeze.webp" /></Link>
+                            <Link to="/Breeze"><input className="imagebutton_big" type="image" alt="Breeze" name="Breeze" src="maps/breeze.webp" /></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Fracture"><input className="imagebutton" type="image" alt="Fracture" name="Fracture" src="maps/fracture.webp" /></Link>
+                            <Link to="/Fracture"><input className="imagebutton_big" type="image" alt="Fracture" name="Fracture" src="maps/fracture.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Haven"><input className="imagebutton" type="image" alt="Haven" name="Haven" src="maps/haven.webp" /></Link>
+                            <Link to="/Haven"><input className="imagebutton_big" type="image" alt="Haven" name="Haven" src="maps/haven.webp" /></Link>
                             
                         </Col>
                         <Col lg={12} xl={6} className='mt-3 home_links'>
-                            <Link to="/Icebox"><input className="imagebutton" type="image" alt="Icebox" name="Icebox" src="maps/icebox.webp" /></Link>
+                            <Link to="/Icebox"><input className="imagebutton_big" type="image" alt="Icebox" name="Icebox" src="maps/icebox.webp" /></Link>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={{span:6, offset:3}} className='mt-3 mb-5'>
-                            <Link to="/Split"><input className="imagebutton" type="image" alt="Split" name="Split" src="maps/split.webp" /></Link>
+                            <Link to="/Split"><input className="imagebutton_big" type="image" alt="Split" name="Split" src="maps/split.webp" /></Link>
                         </Col>
                     </Row>
                     {/*<Row className='BottomBanner fixed-bottom'>
