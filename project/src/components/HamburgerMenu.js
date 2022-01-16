@@ -7,8 +7,8 @@ export default function HamburgerMenu() {
     
     return (
         <div className='LeftTitle'>
-            <Navbar class="toggleBtn" collapseOnSelect expand="lg" bg="transparent" variant="dark" navbarScroll style={{ maxHeight: '100vh' }}>
-                <Navbar.Toggle class="toggleBtn" aria-controls="responsive-navbar-nav" />
+            <Navbar className="toggleBtn" collapseOnSelect expand="lg" bg="transparent" variant="dark" navbarscroll style={{ maxHeight: '100vh' }}>
+                <Navbar.Toggle className="toggleBtn" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         
