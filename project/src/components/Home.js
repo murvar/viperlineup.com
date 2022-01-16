@@ -69,7 +69,7 @@ export default function Home() {
                     </Row>
                     <Row className=''>
                         <Col lg={12} xl={{span:6, offset:3}} className='mt-3 mb-5'>
-                            <Link to="/Split"><input className="imagebutton_big" type="image" alt="Split" name="Split" src="maps/split.webp" /></Link>
+                            <Link to="/Split"><input className="imagebutton" type="image" alt="Split" name="Split" src="maps/split.webp" /></Link>
                         </Col>
                     </Row>
                     {/*<Row className='BottomBanner fixed-bottom'>

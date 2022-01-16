@@ -25,7 +25,7 @@ export default function About() {
                     <h2>Maps</h2>
                     <LeftSide className="sidebar"/>
                 </Col>
-                <Col md={12} lg={{span:8}} className=''>
+                <Col md={12} lg={{span:8, offset:2}} className=''>
                     <Row className="Description">
                         <h1>
                             This is an about page

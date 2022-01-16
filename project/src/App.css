@@ -53,10 +53,6 @@
   border-color: black;
 }
 
-.TopBanner {
-
-}
-
 .Leftside {
   border-style: solid;
   border-color: black;
@@ -78,8 +74,6 @@
   overflow: auto;
 }
 
-
-
 .Banner {
   height:100%;
   width:100%;
@@ -98,7 +92,7 @@
   border-radius: 10px;
 }
 
-.imagebutton:hover {
+.imagebutton:hover, .imagebutton_big:hover {
   transform: scale(1.05);
   filter: brightness(150%);
   -webkit-transition: all 0.2s ease;
@@ -170,5 +164,16 @@ li.dropdown {
   display: inline-block;
 }
 
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #15cf74;
+}
+
+footer a:hover {
+  color: black;
+}
 
 
