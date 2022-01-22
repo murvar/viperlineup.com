@@ -7,6 +7,8 @@ import Position from './Position';
 import HamburgerMenu from './HamburgerMenu';
 import SideBanner from './SideBanner';
 import {Helmet} from "react-helmet";
+import Footer from "./Footer";
+
 
 
 export default function Main(map) {
@@ -66,6 +68,10 @@ export default function Main(map) {
                             <Position position = {Data.map[result].positions.A_site} />
                             <Position position = {Data.map[result].positions.B_site} />
                             <ThirdSite />
+
+                            <Row>
+                                <Footer />
+                            </Row>
                                 
                             
 
@@ -77,12 +83,6 @@ export default function Main(map) {
                     <SideBanner />
                 </Col>
             </Row>
-            {/*<Row className='BottomBanner fixed-bottom'>
-                <Col>
-                    <p>Banner</p>
-                    <BottomBanner />
-                </Col>
-    </Row>*/}
         </Container>
     
     )

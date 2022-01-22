@@ -3,6 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import HamburgerMenu from './HamburgerMenu';
+import Footer from "./Footer";
 
 export default function Home() {
 
