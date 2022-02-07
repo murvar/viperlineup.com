@@ -28,8 +28,24 @@ export default function About() {
                 <Col md={12} lg={{span:8, offset:2}} className=''>
                     <Row className="Description">
                         <h1>
-                            This is an about page
+                            About us:
                         </h1>
+
+                        <h2>
+                            This webapplication is developed and maintained by two swedish
+                            programming students as a pastime project.
+                            <br/>
+                            <br/>
+                            When playing Valorant we wanted to find the perfect spots to
+                            use Vipers snakebite ability. All we found online were either 
+                            sketchy magazines farming click or long youtube tutorials never
+                            getting to the point.
+                            <br/>
+                            <br/>
+                            Our hope is that this website will help you just as much as it
+                            helps us! If some information in incorrect, please do not hesitate
+                            to reach out to us and we will do our best to push an update ASAP.
+                        </h2>
                     </Row>
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
