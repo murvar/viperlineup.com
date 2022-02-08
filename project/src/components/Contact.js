@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import LeftSide from './LeftSide';
 import HamburgerMenu from './HamburgerMenu';
+import Footer from "./Footer";
 
 export default function Contact() {
 
@@ -37,6 +38,9 @@ export default function Contact() {
                             <br/>
                             Please reach out to us at viperpostplant@gmail.com
                         </p>
+                    </Row>
+                    <Row>
+                        <Footer />
                     </Row>
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>

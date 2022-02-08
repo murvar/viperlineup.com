@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import LeftSide from './LeftSide';
 import HamburgerMenu from './HamburgerMenu';
+import Footer from "./Footer";
 
 export default function About() {
 
@@ -47,11 +48,15 @@ export default function About() {
                                 to reach out to us and we will do our best to push an update ASAP.
                             </p>
                     </Row>
+                    <Row>
+                        <Footer />
+                    </Row>
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
                     <p>Banner</p>
                 </Col>
             </Row>
+
             </Container>
     )
 }
