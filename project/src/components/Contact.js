@@ -25,7 +25,7 @@ export default function Contact() {
                     <h2>Maps</h2>
                     <LeftSide className="sidebar"/>
                 </Col>
-                <Col md={12} lg={{span:8, offset:2}} className=''>
+                <Col md={12} lg={{span:8, offset:2}} className='contactMain'>
                     <Row className="Description">
                         <h1>
                             Contact

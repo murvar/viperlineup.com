@@ -9,7 +9,7 @@
 
 .Title {
   text-align: center;
-  border-style: solid;
+  /*border-style: solid;*/
   background-color: #15cf74; 
   margin: 10px;   
 }
@@ -33,7 +33,7 @@
   background-color:#3a3a3a;
   color: white;
   border-color: black;
-  height: 100mv;
+  min-height: 100vh;
 }
 
 .LeftSideBanner {
@@ -178,5 +178,18 @@ footer a {
 footer a:hover {
   color: black;
 }
+
+.aboutus {
+  min-height: 100vh;
+}
+
+.aboutus h1, .aboutus p {
+  background-color: #15cf74;
+}
+
+.contactMain {
+  min-height: 100vh;
+}
+
 
 
