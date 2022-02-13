@@ -46,8 +46,8 @@ export default function Webpages(){
                 <Route path="/Privacypolicy" element={<Privacy />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Contact" element={<Contact />} />
+                <Route path="/sitemap" />
                 <Route path="*" element={<Navigate replace to="/" />} />
-
             </Routes>
         </Router>
         </div>
