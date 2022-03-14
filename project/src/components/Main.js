@@ -8,6 +8,7 @@ import HamburgerMenu from './HamburgerMenu';
 import SideBanner from './SideBanner';
 import {Helmet} from "react-helmet";
 import Footer from "./Footer";
+import Ad from "./Ad";
 
 
 
@@ -32,10 +33,6 @@ export default function Main(map) {
     return ( 
         
         <Container fluid className='d-flex flex-wrap flex-column'>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2476150477980411"
-            crossOrigin="anonymous"></script>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2476150477980411"
-            crossOrigin="anonymous"></script>
             <Helmet>
                 <title>{title}</title>
                 <meta name="description" content={metaDescription} />
@@ -66,6 +63,7 @@ export default function Main(map) {
                                 </p>
                             </Row>
                             <Position position = {Data.map[result].positions.A_site} />
+                            <Ad />
                             <Position position = {Data.map[result].positions.B_site} />
                             <ThirdSite />
 
