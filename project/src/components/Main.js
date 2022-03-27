@@ -63,9 +63,15 @@ export default function Main(map) {
                                 </p>
                             </Row>
                             <Position position = {Data.map[result].positions.A_site} />
-                            <Ad />
+                            <Row>
+                                <Ad path="2975221930" format="fluid"/>
+                            </Row>
                             <Position position = {Data.map[result].positions.B_site} />
                             <ThirdSite />
+                            <Row>
+                                <Ad path="6201958998" format="fluid"/>
+
+                            </Row>
 
                             <Row>
                                 <Footer />
@@ -77,7 +83,6 @@ export default function Main(map) {
                 </Col>
                 
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
-                    <p>Banner</p>
                     <SideBanner />
                 </Col>
             </Row>

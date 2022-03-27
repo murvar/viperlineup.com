@@ -1,29 +1,3 @@
-/** import React, { useState, useEffect } from 'react';
-
-export default function Ad() {
-
-        const { currentPath } = props
-
-        useEffect(() => {
-            window.adsbygoogle = window.adsbygoogle || []
-            window.adsbygoogle.push({})
-        }, [currentPath])
-
-
-    
-    return (
-        <div key={currentPath}>
-            <ins className="adsbygoogle"
-                style={{display: "block", textAlign: "center"}}
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-adtest="on"
-                data-ad-client="ca-pub-2476150477980411"
-                data-ad-slot="2975221930">
-            </ins>
-        </div>
-    )
-} */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -54,10 +28,10 @@ class Adsense extends React.Component {
             className="adsbygoogle"
             style={{display: "block", textAlign: "center"}}
             data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-adtest="on"
+            data-ad-format={this.props.format}
             data-ad-client="ca-pub-2476150477980411"
-            data-ad-slot="2975221930"
+            data-ad-slot={path}
+            data-full-width-responsive="true"
         />
       </div>
     );

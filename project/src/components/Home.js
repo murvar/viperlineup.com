@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import HamburgerMenu from './HamburgerMenu';
-import Footer from "./Footer";
+import SideBanner from './SideBanner';
 
 export default function Home() {
 
@@ -25,14 +25,9 @@ export default function Home() {
             </Row>
             <Row>
                 <Col sm={0} md={2} className='LeftSideBanner d-none d-lg-block'>
-                    <p>Banner</p>
+                    <SideBanner />
                 </Col>
                 <Col md={12} lg={{span:8}} className=''>
-                    {/*
-                    <Row>
-                        <Link to="/"><input className="Banner" type="image" name="Home" src="banner.png" alt="Home" /></Link>
-                    </Row>
-                    */}
                     <Row className='Title mt-3'>
                         <h1>Home: All Valorant Maps for Viper Lineups</h1>
                     </Row>
@@ -73,14 +68,10 @@ export default function Home() {
                             <Link to="/Split"><input className="imagebutton_big" type="image" alt="Split" name="Split" src="maps/split.webp" /></Link>
                         </Col>
                     </Row>
-                    {/*<Row className='BottomBanner fixed-bottom'>
-                            <Col>
-                                <p>Banner</p>
-                            </Col>
-                </Row>*/}
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
-                    <p>Banner</p>
+                    <SideBanner />
+
                 </Col>
             </Row>
             

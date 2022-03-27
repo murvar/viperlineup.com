@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import LeftSide from './LeftSide';
 import HamburgerMenu from './HamburgerMenu';
 import Footer from "./Footer";
+import SideBanner from './SideBanner';
 
 export default function About() {
 
@@ -53,7 +54,7 @@ export default function About() {
                     </Row>
                 </Col>
                 <Col sm={0} md={2} className='SideBanner d-none d-lg-block'>
-                    <p>Banner</p>
+                    <SideBanner />
                 </Col>
             </Row>
 
