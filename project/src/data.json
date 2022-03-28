@@ -76,7 +76,7 @@
                     [
                         "Walk up to the edge of the elevating stone at A Lobby. ", 
                         "Place yourself in the corner.", 
-                        "Turn to the left and loop up.", 
+                        "Turn to the left and look up.", 
                         "Aim the crosshair in between the right gap of the leaves. "
                     ],
                     "siteImage":"plants/Breeze_A.webp"
@@ -139,7 +139,7 @@
                     "instructions":
                     [
                         "Walk up to the corner of the sandbags and the fence at A Long.", 
-                        "Turn to the left and loop up.", 
+                        "Turn to the left and look up.", 
                         "Identify the “100” underneath Vipers fuel bar in the middle.",
                         "Aim the “100” in front of the second farmost right lamp."
                     ],
